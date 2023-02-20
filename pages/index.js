@@ -48,8 +48,8 @@ function changefont(font){
             className="absolute right-10 cursor-pointer text-2xl"
           />
         </nav>
-        <div className="fixed bg-slate-400 text-2xl gap-8 rounded-xl bottom-3 left-1/2 w-52 h-10 transform -translate-x-1/2 py-2 px-4 flex justify-around sm:justify-center sm:w-52 sm:max-w-screen-lg ">
-    <BsFillPaletteFill onClick={() => setModaloneIsOpen(true)}/>
+        <div onClick={() => setModaloneIsOpen(true)} className="fixed bg-slate-400 text-2xl gap-8 rounded-xl bottom-3 left-1/2 w-52 h-10 transform -translate-x-1/2 py-2 px-4 flex justify-around sm:justify-center sm:w-52 sm:max-w-screen-lg ">
+    <BsFillPaletteFill/>
     </div>
     {ModaloneisOpen && (
         <div className="fixed z-10 inset-0 overflow-y-auto">
