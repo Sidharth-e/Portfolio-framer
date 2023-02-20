@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import deved from "../public/avatar.jpg";
+import deved from "../public/avatar.png";
 import Image from "next/image";
 
 function getexp(date) {
@@ -17,7 +17,7 @@ function getexp(date) {
   }
   return exp;
 }
-export default function about() {
+export default function about(props) {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
@@ -50,13 +50,15 @@ export default function about() {
       animate={inView ? "visible" : "hidden"}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.7 }}
-        className="mx-auto bg-gradient-to-b from-teal-500 mb-10 rounded-full w-80 h-80 relative overflow-hidden"
+      style={{background:props.primary}}
+        className="mx-auto mb-10 rounded-full w-80 h-80 relative overflow-hidden"
       >
         <Image alt="img" src={deved} layout="fill" objectFit="cover" />
       </motion.div>
       <motion.h3
       ref={ref}
       variants={item}
+      style={{color:props.primary}}
       animate={inView ? "visible" : "hidden"}
         className="text-3xl py-1 dark:text-white "
       >
@@ -67,6 +69,7 @@ export default function about() {
       ref={ref}
       variants={item}
       animate={inView ? "visible" : "hidden"}
+      style={{color:props.secondary}}
         className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
         Innovative tech mind with {experience} years of experience working as a
         computer programmer. Capable of working with a variety of technology and
