@@ -9,7 +9,7 @@ import { motion,AnimatePresence} from "framer-motion";
 
 import { useInView } from "react-intersection-observer";
 
-export default function home() {
+export default function home(props) {
   const [ref, inView] = useInView({
     threshold: 0.5,
   });
@@ -39,7 +39,8 @@ export default function home() {
             type:"spring",
             stiffness:400
           }}
-          className="text-3xl py-5 text-teal-600 font-medium  dark:text-teal-400 md:text-6xl"
+          style={{color:props.primary}}
+          className="text-3xl py-5 md:text-6xl"
         >
           Hi this is Sidharth E
         </motion.h2>
@@ -63,6 +64,7 @@ export default function home() {
             type:"spring",
             stiffness:100
           }}
+          style={{color:props.secondary}}
           className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl text-left"
         >
           I&apos;m a Full Stack developer. I spend my whole day, practically
@@ -80,9 +82,11 @@ export default function home() {
               type:"spring",
               stiffness:100
             }}
+            
           >
             <a
-              className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md"
+            style={{backgroundColor:props.primary}}
+              className=" text-white px-4 py-2 font-bold border-none rounded-md"
               href="https://github.com/Sidharth-e/Portfolio/raw/main/public/Sidharth_E_Resume_FullStack.pdf"
               download
             >
@@ -108,7 +112,7 @@ export default function home() {
             }}
             href="mailto: sidharthe38943@gmail.com"
           >
-            <AiFillMail className="rounded-full" />
+            <AiFillMail style={{color:props.primary}} className="rounded-full" />
           </motion.a>
           <motion.a
             ref={ref} 
@@ -126,7 +130,7 @@ export default function home() {
             }}
             href="https://www.linkedin.com/in/sidharth-e-6057081bb"
           >
-            <AiFillLinkedin className="rounded-full" />
+            <AiFillLinkedin style={{color:props.primary}}  className="rounded-full" />
           </motion.a>
           <motion.a
             ref={ref} 
@@ -144,7 +148,7 @@ export default function home() {
             }}
             href="https://www.instagram.com/_sidharth_e_/"
           >
-            <AiFillInstagram className="rounded-full" />
+            <AiFillInstagram style={{color:props.primary}}  className="rounded-full" />
           </motion.a>
         </div>
       </motion.div>
