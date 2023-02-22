@@ -77,7 +77,7 @@ function changefont(font){
                     <h3 className="text-lg leading-6 font-medium text-gray-900">
                       Theme
                     </h3>
-                    <h4 className="text-lg mt-5 leading-6 font-medium text-gray-900">Dark mode Themes</h4>
+                 
                     <div className="mt-2 flex flex-wrap gap-5">
                     <motion.button 
                     whileHover={{ scale: 1.2 }}
