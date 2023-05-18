@@ -1,0 +1,26 @@
+{
+  "index.js -> ./components/about": {
+    "id": "index.js -> ./components/about",
+    "files": [
+      "static/chunks/pages_components_about_js.js"
+    ]
+  },
+  "index.js -> ./components/home": {
+    "id": "index.js -> ./components/home",
+    "files": [
+      "static/chunks/pages_components_home_js.js"
+    ]
+  },
+  "index.js -> ./components/projects": {
+    "id": "index.js -> ./components/projects",
+    "files": [
+      "static/chunks/pages_components_projects_js.js"
+    ]
+  },
+  "index.js -> ./components/skills": {
+    "id": "index.js -> ./components/skills",
+    "files": [
+      "static/chunks/pages_components_skills_js.js"
+    ]
+  }
+}

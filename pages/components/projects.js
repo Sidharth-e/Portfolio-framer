@@ -15,7 +15,7 @@ export default function projects(props) {
       <div>
         <motion.h3
          style={{color:props.primary}}
-         className="text-3xl py-1 dark:text-white ">Projects
+         className="text-3xl py-1 dark:text-white ">Projects & Works
          </motion.h3>
         <motion.p
          style={{color:props.secondary}}
@@ -25,7 +25,7 @@ export default function projects(props) {
           worked.
         </motion.p>
       </div>
-      <div className="flex flex-col gap-20 py-10 lg:flex-row lg:flex-wrap">
+      <div className="flex flex-wrap gap-20 lg:flex-row lg:flex-wrap">
         <motion.div
         style={{background:props.primary}}
         whileHover={{ scale: 1.1 }}
@@ -287,6 +287,42 @@ export default function projects(props) {
          </div>
          <div style={{background:props.secondary}} className="rounded-xl  font-bold text-white text-sm p-4 my-5 bg-white">
          Techstack:- Angular,Chartjs,Flask,Python
+         </div>
+        </motion.div>
+        <motion.div
+        style={{background:props.primary}}
+         whileHover={{ scale: 1.1 }}
+         whileTap={{ scale: 0.9 }}
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
+          13
+          </div>
+         <div style={{background:props.secondary}} className="rounded-xl font-extrabold  text-white text-xl p-5  bg-white">
+         CD/CI pipeline
+          </div>
+         <div style={{background:props.secondary}} className="rounded-xl  text-white font-serif text-sm p-4 my-5 bg-white">
+         Created a CD/CI pipeline using the Jenkins to build the deploy the code in nexus repostiory
+         </div>
+         <div style={{background:props.secondary}} className="rounded-xl  font-bold text-white text-sm p-4 my-5 bg-white">
+         Techstack:- jenkins,AWS,EC2,Sonatype nexus
+         </div>
+        </motion.div>
+        <motion.div
+        style={{background:props.primary}}
+         whileHover={{ scale: 1.1 }}
+         whileTap={{ scale: 0.9 }}
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
+          14
+          </div>
+         <div style={{background:props.secondary}} className="rounded-xl font-extrabold  text-white text-xl p-5  bg-white">
+         AWS EC2 instance Automation
+          </div>
+         <div style={{background:props.secondary}} className="rounded-xl  text-white font-serif text-sm p-4 my-5 bg-white">
+         Automatio of EC2 instace in AWS
+         </div>
+         <div style={{background:props.secondary}} className="rounded-xl  font-bold text-white text-sm p-4 my-5 bg-white">
+         Techstack:- AWS,EC2,lambda,cloudwatch
          </div>
         </motion.div>
       </div>
