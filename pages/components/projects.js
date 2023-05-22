@@ -30,7 +30,7 @@ export default function projects(props) {
         style={{background:props.primary}}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80 flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80 lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto text-white">1</div>
          <div style={{background:props.secondary}} className="rounded-xl font-extrabold  text-white text-xl p-5  bg-white">
           Host override testing
@@ -50,7 +50,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80 lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           2
           </div>
@@ -71,7 +71,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80 lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           3
           </div>
@@ -96,7 +96,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           4
           </div>
@@ -120,7 +120,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           5
           </div>
@@ -146,7 +146,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           6
           </div>
@@ -166,7 +166,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           7
           </div>
@@ -187,7 +187,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           8
           </div>
@@ -207,7 +207,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           9
           </div>
@@ -227,7 +227,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           10
           </div>
@@ -252,7 +252,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           11
           </div>
@@ -274,7 +274,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           12
           </div>
@@ -293,7 +293,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           13
           </div>
@@ -311,7 +311,7 @@ export default function projects(props) {
         style={{background:props.primary}}
          whileHover={{ scale: 1.1 }}
          whileTap={{ scale: 0.9 }}
-         className="text-center shadow-xl p-5  rounded-xl my-5 w-80   flex-1 lg:flex-wrap">
+         className="text-center shadow-xl p-5  rounded-xl my-5 w-80    lg:flex-wrap">
          <div style={{background:props.secondary}} className="h-16 w-16 rounded-full p-5 mb-5 mx-auto  text-white">
           14
           </div>
