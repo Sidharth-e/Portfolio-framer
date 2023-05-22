@@ -4,19 +4,26 @@ import { useInView } from "react-intersection-observer";
 import deved from "../public/avatar.png";
 import Image from "next/image";
 
-function getexp(date) {
-  const today = new Date();
-  const joiningdate = new Date(date);
-  let exp = today.getFullYear() - joiningdate.getFullYear();
-  const monthdiff = today.getMonth() - joiningdate.getMonth();
-  if (
-    monthdiff < 0 ||
-    (monthdiff === 0 && today.getDate() < joiningdate.getDate())
-  ) {
-    exp--;
-  }
-  return exp;
+function getYearMonthDifference(targetDate) {
+  const startDate = new Date('2021-01-18');
+  const endDate = new Date(targetDate);
+
+  const startYear = startDate.getFullYear();
+  const startMonth = startDate.getMonth();
+
+  const endYear = endDate.getFullYear();
+  const endMonth = endDate.getMonth();
+
+  const yearDiff = endYear - startYear;
+  const monthDiff = endMonth - startMonth;
+
+  const totalMonths = yearDiff * 12 + monthDiff;
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  return { years, months };
 }
+
 export default function about(props) {
   const [ref, inView] = useInView({
     threshold: 0.5,
@@ -35,8 +42,8 @@ export default function about(props) {
       opacity: 1
     }
   }
-  const date = "2021-01-18";
-  const experience = getexp(date);
+  const date= new Date();
+  const experience = getYearMonthDifference(date);
   return (
     <AnimatePresence>
     <motion.div
@@ -71,7 +78,7 @@ export default function about(props) {
       animate={inView ? "visible" : "hidden"}
       style={{color:props.secondary}}
         className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-        Innovative tech mind with {experience} years of experience working as a
+        Innovative tech mind with {experience.years}.{experience.months} years of experience working as a
         computer programmer. Capable of working with a variety of technology and
         software solutions, and managing databases. Valuable team member who has
         experience diagnosing problems and developing solutions.Talented person
